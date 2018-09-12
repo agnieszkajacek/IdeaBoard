@@ -12,6 +12,7 @@ class IdeaForm extends  Component {
   }
 
   handleInput = (e) => {
+    this.props.resetNotification()
     this.setState({
       [e.target.name]: e.target.value
     })
@@ -42,10 +43,10 @@ class IdeaForm extends  Component {
         <form onBlur={this.handleBlur}>
           <input className='input' type="text"
             name="title" placeholder='Enter a Title'
-            value={title} onChange={this.handleInput} />
+            value={title} onChange={this.handleInput} ref={this.props.titleRef} />
           <textarea className='input' name="body"
             placeholder='Describe your idea'
-            value={body} onChange={this.handleInput}>
+            value={body} onChange={this.handleInput} ref={this.props.bodyRef}>
           </textarea>
         </form>
       </div>
