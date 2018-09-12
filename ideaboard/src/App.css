@@ -1,0 +1,43 @@
+.App-header {
+  text-align: center;
+  height: 150px;
+  padding: 20px;
+}
+.brick {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  padding: 5px;
+  background: rgb(222, 227, 210);
+  float: left;
+  font-size: 11px;
+  text-align: left;
+}
+.newIdeaButton {
+  background: rgb(171, 204, 210);
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding:10px;
+}
+.input {
+  border: 0;
+  background: none;
+  outline: none;
+  margin-top:10px;
+  width: 140px;
+  font-size: 11px;
+}
+
+.input:focus {
+  border: solid 1px lightgrey;
+}
+
+textarea {
+  resize: none;
+  height: 90px;
+  font-size: 11px;
+}
